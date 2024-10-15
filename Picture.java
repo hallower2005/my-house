@@ -17,6 +17,8 @@ public class Picture
     private Circle sun;
     private Circle moon;
     private Square suelo;
+    private Person persona1;
+    private Person persona2;
 
     /**
      * Constructor for objects of class Picture
@@ -80,6 +82,19 @@ public class Picture
         sun.slowMoveVertical(-150);
         
         moon.makeInvisible();
+        
+        persona1 = new Person();
+        persona1.moveHorizontal(-250);
+        persona1.moveVertical(25);
+        persona1.makeVisible();
+        persona1.slowMoveHorizontal(100);
+        persona2 = new Person();
+        persona2.moveHorizontal(250);
+        persona2.moveVertical(25);
+        persona2.makeVisible();
+        persona2.slowMoveHorizontal(-200);
+        
+        
         
     }
     /**
