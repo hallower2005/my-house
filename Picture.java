@@ -74,7 +74,14 @@ public class Picture
         moon.makeVisible();
         
     }
-
+    public void amanecer()
+    {   
+        sun.makeVisible();
+        sun.slowMoveVertical(-150);
+        
+        moon.makeInvisible();
+        
+    }
     /**
      * Change this picture to black/white display
      */
